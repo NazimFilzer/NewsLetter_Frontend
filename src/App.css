@@ -98,7 +98,8 @@ button {
 }
 
 button:hover {
-  background-color: #FF5147;
+  background: linear-gradient(to right, hsl(352, 100%, 67%), hsl(13, 100%, 62%));
+  transition: 200ms ease;
   color: white;
 }
 

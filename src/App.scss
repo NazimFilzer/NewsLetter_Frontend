@@ -106,7 +106,12 @@ button {
 }
 
 button:hover {
-  background-color: #FF5147;
+  background: linear-gradient(
+    to right,
+    hsl(352, 100%, 67%),
+    hsl(13, 100%, 62%)
+  );
+  transition: 200ms ease;
   color: white;
 }
 
@@ -154,7 +159,7 @@ button:hover {
       width: 70% !important;
       margin-top: 0px !important;
       margin-left: 0.8em !important;
-      font-size: 50px; 
+      font-size: 50px;
     }
     span {
       font-weight: 700;
@@ -166,8 +171,8 @@ button:hover {
       // justify-content: left;
     }
 
-    p{
-      margin-left: 2.2em ;
+    p {
+      margin-left: 2.2em;
       width: 66%;
     }
     button {
@@ -176,7 +181,6 @@ button:hover {
       width: 80% !important;
     }
   }
-  
 }
 
 ///////////////COnfirmation Page//////////////////////
