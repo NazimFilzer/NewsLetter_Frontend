@@ -1,4 +1,5 @@
-import HeroImg from './assets/images/illustration-sign-up-mobile.svg'
+import MobileImg from './assets/images/illustration-sign-up-mobile.svg'
+import DesktopImg from './assets/images/illustration-sign-up-desktop.svg'
 import { useRef } from 'react';
 
 // eslint-disable-next-line react/prop-types
@@ -9,7 +10,9 @@ const Form = ({ input, handleSubmit, cssClass, error }) => {
     };
     return (
         <div className='container'>
-            <img src={HeroImg} alt="HeroImg" />
+            <img className='mobile-img' src={MobileImg} alt="" />
+            <img className='desktop-img' src={DesktopImg} alt="" />
+
             <div className="content">
                 <h1>Stay updated!</h1>
                 <p className='para'>Join 60,000+ product managers receiving monthly updates on:</p>

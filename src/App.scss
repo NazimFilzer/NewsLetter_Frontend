@@ -102,12 +102,81 @@ button {
   width: 83%;
   border-radius: 5px;
   padding: 1.25em;
-  border: 1px solid hsl(231, 7%, 60%);
+  border: 1px solid hsl(0, 0%, 99%);
 }
 
 button:hover {
-  background-color: hsl(234, 29%, 30%);
+  background-color: #FF5147;
   color: white;
+}
+
+.desktop-img {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  #root {
+    display: flex;
+    background-color: hsl(234, 29%, 20%);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .container {
+    background-color: white;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    border-radius: 30px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktop-img {
+    display: block;
+    width: 50% !important ;
+    margin: 1em;
+  }
+
+  #confimation-container {
+    width: 25%;
+    // height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    margin: 0;
+    background-color: white;
+    border-radius: 30px;
+
+    h1 {
+      width: 70% !important;
+      margin-top: 0px !important;
+      margin-left: 0.8em !important;
+      font-size: 50px; 
+    }
+    span {
+      font-weight: 700;
+    }
+
+    img {
+      margin: 2em;
+      width: 70px;
+      // justify-content: left;
+    }
+
+    p{
+      margin-left: 2.2em ;
+      width: 66%;
+    }
+    button {
+      margin: 2em;
+      position: static !important;
+      width: 80% !important;
+    }
+  }
+  
 }
 
 ///////////////COnfirmation Page//////////////////////
@@ -125,19 +194,19 @@ button:hover {
   margin-top: 10em;
   margin-left: 2em;
 
-  h1{
-    margin: .8em 0;
+  h1 {
+    margin: 0.8em 0;
     width: 90%;
   }
-  span{
+  span {
     font-weight: 700;
   }
 
-  img{
+  img {
     width: 70px;
     // justify-content: left;
   }
-  button{
+  button {
     position: relative;
     top: 330px;
     width: 90%;
