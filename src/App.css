@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: hsl(234, 29%, 20%);
+}
+.container img {
+  width: 100%;
+}
+.container .content {
+  margin-top: 0.5em;
+  margin-left: 2em;
+}
+.container h1 {
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+.container .para {
+  margin-bottom: 1.25em;
+  font-weight: 400;
+  max-width: 350px;
+}
+.container ul {
+  margin-left: 1.6em;
+  margin-bottom: 2.5em;
+}
+.container ul li {
+  max-width: 300px;
+  margin-bottom: 0.6em;
+  list-style-image: url("./assets/images/icon-list.svg");
+  padding-left: 0.625em;
+  vertical-align: middle;
+}
+.container ul li::marker {
+  margin-top: 5px;
+  padding: 5px;
+}
+.container .inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.2em;
+}
+.container .inputs input {
+  width: 85%;
+  border-radius: 5px;
+  padding: 1.25em;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+.container .inputs label {
+  margin-bottom: 0.5em;
+  font-weight: 700;
+  font-size: small;
+}
+.container span {
+  color: hsl(4, 100%, 67%);
+  font-size: small;
+}
+.container .error input {
+  background-color: hsl(5, 93%, 95%);
+  color: hsl(4, 100%, 67%);
+  border-color: red;
+}
+.container .error input::-moz-placeholder {
+  color: hsl(4, 100%, 67%);
+  font-weight: 400;
+}
+.container .error input::placeholder {
+  color: hsl(4, 100%, 67%);
+  font-weight: 400;
+}
+
+.validation {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  font-weight: 700;
+  color: hsl(0, 0%, 82%);
+  background-color: hsl(234, 29%, 20%);
+  width: 83%;
+  border-radius: 5px;
+  padding: 1.25em;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+
+button:hover {
+  background-color: hsl(234, 29%, 30%);
+  color: white;
+}
+
+#confimation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: hsl(234, 29%, 20%);
+  display: inline-block;
+  margin-top: 10em;
+  margin-left: 2em;
+}
+#confimation-container h1 {
+  margin: 0.8em 0;
+  width: 90%;
+}
+#confimation-container span {
+  font-weight: 700;
+}
+#confimation-container img {
+  width: 70px;
+}
+#confimation-container button {
+  position: relative;
+  top: 330px;
+  width: 90%;
+}/*# sourceMappingURL=App.css.map */
